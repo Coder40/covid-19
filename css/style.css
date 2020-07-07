@@ -1,0 +1,595 @@
+/*-------------------------
+        General
+-------------------------*/
+
+:root {
+    --primary-color: #FA5652;
+    --secondary-color: #035755;
+    --p-color: #4B4F51;
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.ml-auto {
+    padding: 0;
+}
+
+.title h5 {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.title h3 {
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.title p {
+    color: var(--p-color);
+    font-size: 17px;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+
+
+/*-------------------------
+        PRELOADER
+-------------------------*/
+
+#overlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: var(--secondary-color);
+}
+
+.loader {
+    position: fixed;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    z-index: 99999;
+    color: var(--primary-color);
+}
+
+
+/*-------------------------
+        HEADER
+-------------------------*/
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+.header_area {
+    direction: ltr;
+}
+
+.navbar .navbar-brand {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    height: 55px;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    color: var(--secondary-color);
+}
+
+.header_area .main-menu .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav {
+    direction: rtl;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--primary-color);
+}
+
+.navbar-light .navbar-brand:active,
+.navbar-light .navbar-brand:hover {
+    color: var(--secondary-color);
+}
+
+
+/*-------------------------
+        HERO
+-------------------------*/
+
+.img-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-hero {
+    text-align: right;
+    padding-top: 70px;
+}
+
+@media (max-width:480px) {
+    .content-hero {
+        padding-bottom: 80px;
+        padding-top: 0;
+    }
+}
+
+.content-hero h4 {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.content-hero h1 {
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.content-hero p {
+    color: var(--p-color);
+    padding-bottom: 10px;
+}
+
+.content-hero a {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    padding: 2.5px 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/*-------------------------
+        ABPUT
+-------------------------*/
+
+.vr::after {
+    content: url(../img/Virus.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+}
+
+.img-about img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-about {
+    text-align: right;
+    padding-top: 150px;
+}
+
+@media (max-width:480px) {
+    .content-about {
+        padding-top: 0;
+    }
+    .rev-mob {
+        flex-direction: column-reverse;
+    }
+}
+
+.content-about h4 {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.content-about h2 {
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.content-about p {
+    color: var(--p-color);
+    padding-bottom: 10px;
+}
+
+.content-about a {
+    background-color: #FFE1E1;
+    color: var(--primary-color);
+    border-radius: 30px;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/*-------------------------
+        moving in
+-------------------------*/
+
+.content-moving {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 450px;
+    max-width: 310px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.box:hover {
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.box img {
+    width: 70%;
+    height: 70%;
+}
+
+.box h4 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.box p {
+    color: var(--p-color);
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+@media (max-width:414px) {
+    .box {
+        margin-bottom: 40px;
+    }
+    .box:hover,
+    .box:active {
+        box-shadow: var(--box-shadow);
+        border-bottom: 3px solid var(--primary-color);
+    }
+}
+
+
+/*-------------------------
+        Symptoms
+-------------------------*/
+
+.content-Symptoms {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-symptoms img {
+    max-width: 100%;
+}
+
+
+/*-------------------------
+        protection
+-------------------------*/
+
+.content-protection::before {
+    content: url(../img/Virus.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 300px;
+}
+
+.content-protection::after {
+    content: url(../img/Virus2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+}
+
+@media (max-width:414px) {
+    .content-protection::before {
+        left: 30px;
+        opacity: 0.6;
+    }
+}
+
+.content-protection .title,
+.title .p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.content-protection img {
+    max-width: 60%;
+}
+
+.content-protection span {
+    background-color: #FFE1E1;
+    border-radius: 50%;
+    padding: 3px 12px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.content-protection h4 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: right;
+}
+
+.content-protection p {
+    color: var(--p-color);
+    text-align: right;
+    padding-top: 18px;
+}
+
+.sec {
+    padding: 20px 0;
+}
+
+.heading {
+    padding-top: 10%;
+}
+
+.right {
+    float: right;
+}
+
+@media (max-width:414px) {
+    .content-protection .title,
+    .title .p {
+        text-align: center;
+    }
+    .sec {
+        padding: 0;
+    }
+    .inv-mob {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+/*-------------------------
+        Reports
+-------------------------*/
+
+#Live-Reports {
+    background-color: #FFFBFB;
+}
+
+.content-Reports img {
+    max-width: 140%;
+}
+
+.Reports {
+    text-align: center;
+    height: 420px;
+    max-width: 270px;
+    background-color: rgba(255, 251, 251, 0.966);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+}
+
+.Reports h4 {
+    padding: 25px 0;
+    color: var(--secondary-color);
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.line .part1 img {
+    width: 50px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.line h5 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.line span {
+    margin-left: 80px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-right: 10pX;
+}
+
+.line i {
+    color: var(--primary-color);
+    line-height: 1.4;
+}
+
+
+/*-------------------------
+        Qustion
+-------------------------*/
+
+.carousel::after {
+    content: url(../img/Virus.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+    float: right;
+}
+
+@media (max-width:414px) {
+    .carousel::after {
+        opacity: 0.3;
+    }
+}
+
+.content-Qustion {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.blockquote {
+    background-color: #F9f9f9;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.11);
+}
+
+.blockquote h5 {
+    color: var(--primary-color);
+    font-weight: 800;
+    padding: 20px 0;
+}
+
+.blockquote p {
+    color: var(--p-color);
+    font-size: 16px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+.carousel-indicators {
+    bottom: -45px;
+}
+
+.carousel-indicators li {
+    background-color: var(--secondary-color);
+    margin: 0 10px;
+}
+
+
+/*-------------------------
+        Footer
+-------------------------*/
+
+footer {
+    direction: ltr;
+    margin: 100px 0 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width:480px) {
+    footer {
+        flex-direction: column;
+    }
+    .fot {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-logo .navbar-brand {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 55px;
+}
+
+.footer-copy p {
+    color: var(--p-color);
+    font-size: 20px;
+}
+
+.footer-insta .bt-media {
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+
+/* Start News */
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: #f9f9f9;
+    border: none;
+}
+
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-header .modal-title {
+    margin: 0 auto;
+}
+
+.modal-body {
+    background-color: #f9f9f9;
+    color: var(--p-color);
+}
+
+.news-content {
+    border-radius: 10px;
+    margin-top: 208px;
+}
+
+.news-content b {
+    font-weight: bold;
+    color: var(--p-color);
+}
+
+.news-content .content p {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* End News */
